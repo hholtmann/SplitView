@@ -36,6 +36,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+    
+    UIBarButtonItem *barButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:nil];
+    self.toolbarItems = @[barButton];
+
 }
 
 - (void)didReceiveMemoryWarning {
